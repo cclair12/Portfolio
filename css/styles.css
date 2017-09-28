@@ -1,3 +1,113 @@
-.skill-box{
-  border: 1px solid #000;
+/*===================================================
+=====================================================
+Developer: Casey Clair
+Table of Contents
+1. Global Styles
+2. Nav Styles
+3. Link Styles
+4. Section Specific Styles
+5. Footer styles
+6. Form styles
+7. Media Queries (mobile and tablet styles)
+
+Color Palette:
+#28344f (Navy Blue)
+#39d6ed (Sky blue)
+#f68632 (Orange)
+#ff5576 (Pink)
+#ededed (off-white)
+=====================================================
+====================================================*/
+
+
+
+/*========================
+1. Global Styles
+=========================*/
+
+body {
+     font-family: 'Montserrat',Helvetica,sans-serif;
+     font-weight: 400;
+     line-height: 1.8;
+     color: #000;
+   }
+
+p {
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
+  }
+
+  h1,h2 {
+      font-family: 'Julius Sans One',Helvetica,sans-serif;
+      font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  section.light-bg {
+    background: #39d6ed;
+    color: #28344f;
+  }
+
+  section.dark-bg {
+    background: #28344f;
+    color: #39d6ed;
+  }
+
+/*========================
+2. Nav Styles
+=========================*/
+
+
+
+/*========================
+3. Link Styles
+=========================*/
+
+/*========================
+4. Section specific styles
+=========================*/
+header {
+  background: url('../img/mountains-small.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ededed;
+
+}
+/*========================
+5. Footer styles
+=========================*/
+
+/*========================
+6. Form styles
+=========================*/
+
+/*========================
+7. Media Queries
+=========================*/
+
+/*mobile styles*/
+
+@media (min-width: 768px) {
+p {
+  font-size: 1.4em;
+}
+
+h2{
+  font-size: 3em;
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+p {
+  font-sizde: 1.7em;
+}
+h2{
+  font-size: 3.5em;
+}
+
 }
