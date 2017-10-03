@@ -12,35 +12,57 @@
       <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&7cMontserrat" rel="stylesheet">
  </head>
  <body>
-  <nav>
-    <div class="container">
-      <a href="#top"><img src="img/casey-logo2.svg" width="125" height="125" alt="Casey Clair's Logo"></a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!--container-->
-  </nav>
+  <!--<header>
+   <div class="container nav-wrapper">
+
+     <h1 class="logo"><a href="#top"><img src="img/casey-logo2.svg" width="150" height="150" alt="Casey Clair's Logo"></a></h1>
+
+     <nav class="main-nav">
+         <ul>
+           <li><a href="#about">About</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+     </nav>
+
+     <div class="collapse-menu">
+       <div class="menu-icon"></div>
+     </div>
+
+   </div>
+
+ </header>-->
+	<nav>
+    <div class="logo"><a href="#top"><img src="img/casey-logo2.svg" width="150" height="150" alt="Casey Clair's Logo"></a></div>
+		<div class="menu-icon">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
 <!--======= intro paragraph ========-->
-  <header>
-    <div class="container">
+    <div class="container-fluid intro">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 centered">
           <h1>Hi, I'm Casey.</h1>
             <p>I'm a web development student based in OKC.</p>
+            <button>See My Work</button>
         </div>
       </div><!--row-->
     </div><!--container-->
-  </header>
 <!--======= About section ========-->
   <section id="about" class="light-bg">
     <div class="container">
       <h2>About Me</h2>
         <div class="row">
           <div class="col-lg-4">
-            <img src="http://via.placeholder.com/250x250" alt="Picture of Casey Clair">
+            <img src="img/portrait.jpg" alt="Picture of Casey Clair">
           </div>
           <div class="col-lg-8">
             <p>My name is Casey Clair, and I am an aspiring web developer. I would describe myself as pretty laid back and easy to get along with. You will find me outdoors most of the time when I am not working. I graduated with a marketing degree from Oklahoma State University in 2015, but I felt like something was missing. I needed that extra skill that set me apart from the status quo and gave me a chance to pursue something more specialized, so I decided to give web development a try. The web has always interested me and I was eager to learn how to create amazing things and challenge myself every day. So far I feel that I have made the right career choice and I am looking forward to what the future brings.</p>
@@ -50,55 +72,82 @@
   </section>
 <!--======= portfolio section ========-->
   <section id="portfolio" class="dark-bg">
+
     <div class="container">
       <h2>Portfolio</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="http://via.placeholder.com/250x250" alt="Woodsman's Log snapshot">
-          </div>
-          <div class="col-lg-8">
-            <h3>Woodsman's Log</h3>
-              <p>1st place in Post-Secondary Web Design Team at the 2017 BPA National Leadership Conference in Orlando, Florida. I was the project manager for this website, which was designed for competition purposes using a specific theme. We were given the theme of "do it yourself". Skills used: HTML, CSS, JavaScript, PHP, SQL</p>
-        </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+      <article class="project-wrapper">
+                    <a href="#">
+                        <figure>
+                            <img src="img/wl_snap.jpg" alt="Woodsman's Log snapshot">
+                        </figure>
+                        <div class="project-content">
+                            <h3>Woodsman's Log</h3>
+                            <p>1st place in Post-Secondary Web Design Team at the 2017 BPA National Leadership Conference in Orlando, Florida. I was the project manager for this website, which was designed for competition purposes using a specific theme. We were given the theme of "do it yourself". <strong>Skills used: HTML, CSS, JavaScript, PHP, SQL</strong></p>
+                        </div><!--project-content-->
+                    </a>
+                </article><!--project-wrapper-->
+                </div>
+
+       <div class="col-lg-6 col-sm-12">
+     <article class="project-wrapper">
+                   <a href="#">
+                       <figure>
+                           <img src="img/owis_snap.jpg" alt="Woodsman's Log snapshot">
+                       </figure>
+                       <div class="project-content">
+                           <h3>Oklahoma Women in STEM</h3>
+                           <p>This website was designed for a client, who is the executive director for a non-profit organization called Oklahoma Women in STEM. The goal for this website was to act as clearinghouse to gather and share women and minority STEM related activities in the state.<strong>Skills used: HTML, CSS, PHP, Bootstrap, WordPress</strong></p>
+                       </div><!--project-content-->
+                   </a>
+               </article><!--project-wrapper-->
+               </div>
       </div><!--row-->
       <div class="row">
-        <div class="col-lg-8">
-          <h3>Oklahoma Women in STEM</h3>
-             <p>This website was designed for a client, who is the executive director for a non-profit organization called Oklahoma Women in STEM. The goal for this website was to act as clearinghouse to gather and share women and minority STEM related activities in the state.  Skills used: HTML, CSS, PHP, Bootstrap, WordPress</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="http://via.placeholder.com/250x250" alt="Oklahoma Women in STEM snapshot">
-      </div>
+      <div class="col-lg-6 col-sm-12">
+    <article class="project-wrapper three">
+                  <a href="#">
+                      <figure>
+                          <img src="img/sb_snap.jpg" alt="Woodsman's Log snapshot">
+                      </figure>
+                      <div class="project-content">
+                          <h3>Sundy Best Discography</h3>
+                          <p>I was assigned to create a small website that showcases a band's music releases and gives viewers a short biography about the band members. This was for educational purposes only. <strong>Skills used: HTML, CSS, Bootstrap</strong></p>
+                      </div><!--project-content-->
+                  </a>
+              </article><!--project-wrapper-->
+              </div>
+
+     <div class="col-lg-6 col-sm-12">
+   <article class="project-wrapper">
+                 <a href="#">
+                     <figure>
+                         <img src="img/cravings-snap.jpg" alt="Woodsman's Log snapshot">
+                     </figure>
+                     <div class="project-content">
+                         <h3>Cravings</h3>
+                         <p>I was given the task of designing a website for a restaurant that is part of the culinary arts program here at Francis Tuttle. The goal for this site was to appeal to customers and make it easier to access information about the restaurant. This was for educational purposes only. <strong>Skills used: HTML, CSS</strong></p>
+                     </div><!--project-content-->
+                 </a>
+             </article><!--project-wrapper-->
+             </div>
     </div><!--row-->
     <div class="row">
-      <div class="col-lg-4">
-        <img src="http://via.placeholder.com/250x250" alt=" Sundy Best Discography snapshot">
-      </div>
-      <div class="col-lg-8">
-        <h3>Sundy Best Discography</h3>
-          <p>I was assigned to create a small website that showcases a band's music releases and gives viewers a short biography about the band members. This was for educational purposes only. Skills: HTML, CSS, Bootstrap
-          </p>
-    </div>
-  </div><!--row-->
-  <div class="row">
-    <div class="col-lg-8">
-      <h3>Cravings</h3>
-         <p>I was given the task of designing a website for a restaurant that is part of the culinary arts program here at Francis Tuttle. The goal for this site was to appeal to customers and make it easier to access information about the restaurant. This was for educational purposes only. Skills used: HTML, CSS
-        </p>
-  </div>
-  <div class="col-lg-4">
-    <img src="http://via.placeholder.com/250x250" alt="Cravings snapshot">
-  </div>
-</div><!--row-->
-<div class="row">
-  <div class="col-lg-4">
-    <img src="http://via.placeholder.com/250x250" alt="Technology Research snapshot">
-  </div>
-  <div class="col-lg-8">
-    <h3>Technology Research</h3>
-       <p>This was an educational, one-page website that I designed to share information about CSS post-processors. Skills used: HTML, CSS</p>
-  </div>
-</div><!--row-->
+    <div class="col-lg-6 col-sm-12">
+  <article class="project-wrapper">
+                <a href="#">
+                    <figure>
+                        <img src="img/tr_snap.jpg" alt="Woodsman's Log snapshot">
+                    </figure>
+                    <div class="project-content">
+                        <h3>Technology Research</h3>
+                        <p>This was an educational, one-page website that I designed to share information about CSS post-processors. <strong>Skills used: HTML, CSS</strong></p>
+                    </div><!--project-content-->
+                </a>
+            </article><!--project-wrapper-->
+            </div>
+   </div><!--row-->
     </div><!--container-->
   </section>
 <!--========= Skills section =========-->
@@ -193,6 +242,7 @@
     </div><!--container-->
   </footer>
   <script src="https://use.fontawesome.com/a69ee7e079.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/custom.js"></script>
  </body>
  </html>
