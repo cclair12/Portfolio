@@ -98,7 +98,7 @@ p {
   }
   .logo img{
     display: inline-block;
-    margin-top: -35px;
+    margin-top: -38px;
   }
   .img-responsive{
     display: block;
@@ -394,6 +394,12 @@ input,textarea{
 @media (min-width: 992px) and (max-width: 1199px){
   .two strong{
       display: inline-block;
-      padding-bottom: .3em;
+      padding-bottom: 1.1em;
+    }
+  }
+  @media (min-width: 1200px) {
+    .two strong{
+      display: inline-block;
+      padding-bottom: 1.3em;
     }
   }
