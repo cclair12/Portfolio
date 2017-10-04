@@ -52,16 +52,32 @@ p {
     margin-left: .5em;
     color: #f68632;
   }
+  button{
+    background: transparent;
+    border-radius: 4px;
+    border-style: none;
+    border: 4px solid #ededed;
+    color: #ededed;
+    padding: .4em;
+    text-transform: uppercase;
+  }
+  button:hover{
+    background: #f68632;
+    border-color: #ac5d23;
+  }
   #about img{
     border: 4px solid #28344f;
     border-radius: 4px;
     display: block;
-    margin: 0 auto 1.2em 1em;
+    margin: 0 auto;
     max-width: 70%;
   }
   section.light-bg {
     background: #39d6ed;
     color: #28344f;
+  }
+  #about,#portfolio,#skills,#contact{
+    padding: 4em 0;
   }
 
   section.dark-bg {
@@ -163,15 +179,17 @@ nav ul li:hover{
 4. Section Specific Styles
 =========================*/
 
-.intro {
+.header {
   background: url('../img/mountains-small.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
 }
 .intro h1{
-  margin: 4em auto 0 auto;
   font-size: 3em;
+}
+.intro-content{
+  margin: 7em auto 0 auto;
 }
 .project-wrapper{
   background: #ededed;
@@ -215,14 +233,79 @@ strong{
   display: inline-block;
   padding-bottom: 3em;
 }
+.skill-box{
+  border: 4px solid #28344f;
+  background: rgba(226,226,226,1);
+background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 51%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(51%, rgba(219,219,219,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 51%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 51%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 51%, rgba(237,237,237,1) 100%);
+background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 51%, rgba(237,237,237,1) 100%);
+  height: 100px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#skills h3{
+  color: #28344f;
+  font-family: 'Julius Sans One',Helvetica,sans-serif;
+  margin-top: 1em;
+}
 
 /*========================
 5. Footer styles
 =========================*/
+footer{
+  background: #ededed;
+  color: #28344f;
+  height: 85px;
+}
+.social-list{
+  display: table;
+  margin: 1.4em auto 0 auto;
+}
+.social-list li{
+  display: inline;
+  margin: 0 .8em 0 auto;
+  text-decoration: none;
+}
 
 /*========================
 6. Form styles
 =========================*/
+.form-wrapper{
+  display: block;
+  margin: 0 auto;
+}
+
+input,textarea{
+  border-style: none;
+  border-radius: 4px;
+  padding: .5em;
+  width: 95%;
+}
+label{
+  margin: .5em auto .5em auto;
+}
+
+input[type="email"]:focus,input[type="text"]:focus,textarea:focus,select:focus {
+  outline: 1px solid #39d6ed;
+}
+input[type="submit"]{
+  background: #39d6ed;
+  border-radius: 4px;
+  border-style: none;
+  border-bottom: 4px solid #2795a5;
+  color: #ededed;
+  padding: .4em;
+  text-transform: uppercase;
+  width: 4em;
+}
+
+input[type="submit"]:hover{
+  background: #f68632;
+  border-color: #ac5d23;
+}
 
 /*========================
 7. Media Queries
@@ -238,15 +321,25 @@ p {
 h2{
   font-size: 3em;
 }
-.intro {
+.header {
   background: url('../img/mountains-medium.jpg') no-repeat;
   background-size: cover;
-  background-position: center;
   height: 700px;
 }
 .intro h1{
   font-size: 3.5em;
 }
+.intro-content{
+  margin: 7.5em auto 0 auto;
+}
+input,textarea{
+  padding: .7em;
+  width: 75%;
+}
+input[type="submit"]{
+  width: 6em;
+}
+
 
 }
 
@@ -259,14 +352,35 @@ p {
 h2{
   font-size: 3.5em;
 }
-.intro {
+.header {
   background: url('../img/mountains-large.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  height: 1000px;
+  height: 900px;
 }
 .intro h1{
   font-size: 4em;
 }
-
+.intro-content{
+  margin: 8em auto 0 auto;
 }
+#about img{
+  max-width: 50%;
+  float: left;
+  margin: 2.5em 1.5em .5em auto;
+
+  }
+input,textarea{
+  width: 55%;
+  }
+  input[type="submit"]{
+    width: 8em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .two strong{
+      display: inline-block;
+      padding-bottom: .3em;
+    }
+  }
