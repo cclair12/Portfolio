@@ -4,11 +4,10 @@ Developer: Casey Clair
 Table of Contents
 1. Global Styles
 2. Nav Styles
-3. Link Styles
-4. Section Specific Styles
-5. Footer styles
-6. Form styles
-7. Media Queries (mobile and tablet styles)
+3. Section Specific Styles
+4. Footer styles
+5. Form styles
+6. Media Queries (mobile and tablet styles)
 
 Color Palette:
 #28344f (Navy Blue)
@@ -52,18 +51,22 @@ p {
     margin-left: .5em;
     color: #f68632;
   }
-  button{
+  .button{
     background: transparent;
     border-radius: 4px;
     border-style: none;
     border: 4px solid #ededed;
     color: #ededed;
-    padding: .4em;
+    padding: .5em;
     text-transform: uppercase;
   }
-  button:hover{
+  .button:hover{
     background: #f68632;
     border-color: #ac5d23;
+  }
+   a:hover{
+    color: #ededed;
+    text-decoration: none;
   }
   #about img{
     border: 4px solid #28344f;
@@ -87,7 +90,11 @@ p {
     padding: 2em 0;
   }
   .logo{
+    background: #ededed;
     float: left;
+    height: 65px;
+
+
   }
   .logo img{
     display: inline-block;
@@ -109,7 +116,7 @@ p {
 nav ul{
 	background-color: #ededed;
 	overflow: hidden;
-	color: #fff;
+	color: #28344f;
 	padding: 0;
 	text-align: center;
 	margin: 0;
@@ -125,28 +132,31 @@ nav ul li a{
 	text-decoration: none;
 	color: inherit;
 }
+nav ul li a:hover{
+  text-decoration: none;
+  color: #28344f;
+}
 
 nav ul li:hover{
 	background-color: #f68632;
 }
 .menu-icon{
 	width: 100%;
-	background: #005c48;
+	background: #ededed;
 	text-align: left;
 	box-sizing: border-box;
 	padding: 15px 10px;
 	cursor: pointer;
-	color: #fff;
+	color: #28344f;
 	display: none;
 	text-align: right;
 }
 
 @media (max-width: 580px){
   nav{
+    border-bottom: 1px solid #ccc;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
     z-index: 1030;
   }
 	nav ul{
@@ -155,15 +165,16 @@ nav ul li:hover{
     position: relative;
 	}
 
-	.showing{
+	.expanded{
 		max-height: 20em;
 	}
 
 	nav ul li{
+    border-top: 1px solid #ccc;
 		box-sizing: border-box;
 		width: 100%;
 		padding: 15px;
-		text-align: left;
+		text-align: center;
 	}
 
 	.menu-icon{
@@ -171,12 +182,9 @@ nav ul li:hover{
 	}
 }
 
-/*========================
-3. Link Styles
-=========================*/
 
 /*========================
-4. Section Specific Styles
+3. Section Specific Styles
 =========================*/
 
 .header {
@@ -253,7 +261,7 @@ background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 
 }
 
 /*========================
-5. Footer styles
+4. Footer styles
 =========================*/
 footer{
   background: #ededed;
@@ -271,7 +279,7 @@ footer{
 }
 
 /*========================
-6. Form styles
+5. Form styles
 =========================*/
 .form-wrapper{
   display: block;
@@ -308,7 +316,7 @@ input[type="submit"]:hover{
 }
 
 /*========================
-7. Media Queries
+6. Media Queries
 =========================*/
 
 /* Small devices */
@@ -375,6 +383,11 @@ input,textarea{
   }
   input[type="submit"]{
     width: 8em;
+  }
+}
+@media (min-width: 581px) {
+  .logo{
+    height: 68px;
   }
 }
 
