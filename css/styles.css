@@ -113,12 +113,19 @@ p {
 2. Nav Styles
 =========================*/
 
+nav{
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
 nav ul{
 	background-color: #ededed;
 	overflow: hidden;
 	color: #28344f;
 	padding: 0;
-	text-align: center;
+	text-align: justify;
 	margin: 0;
 	transition: max-height 0.5s;
 }
@@ -389,7 +396,7 @@ h2{
 }
 #about img{
   max-width: 100%;
-  margin: 2.5em 1.5em .5em auto;
+  margin: 2.8em 1.5em .5em auto;
 
   }
 input,textarea{
