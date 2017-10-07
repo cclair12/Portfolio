@@ -125,21 +125,22 @@ nav ul{
 
 nav ul li{
 	display: inline-block;
-	padding: 20px;
 }
 
 nav ul li a{
-	text-decoration: none;
-	color: inherit;
+	color: #28344f;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
 }
 nav ul li a:hover{
   text-decoration: none;
-  color: #28344f;
+  background: #f68632;
+}
+nav ul li a:active{
+  background: #ff5576;
 }
 
-nav ul li:hover{
-	background-color: #f68632;
-}
 .menu-icon{
 	width: 100%;
 	background: #ededed;
@@ -172,10 +173,21 @@ nav ul li:hover{
 	nav ul li{
     border-top: 1px solid #ccc;
 		box-sizing: border-box;
+    display: inline-block;
+    padding: 0;
 		width: 100%;
-		padding: 15px;
 		text-align: center;
 	}
+  nav ul li a{
+    display: block;
+    padding: 15px;
+  }
+  nav ul li a:hover{
+    background: #f68632;
+  }
+  nav ul li a:active{
+    background: #ff5576;
+  }
 
 	.menu-icon{
 		display: block;
@@ -258,6 +270,9 @@ background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 
   color: #28344f;
   font-family: 'Julius Sans One',Helvetica,sans-serif;
   margin-top: 1em;
+}
+#contact p{
+  margin: 0 auto 1.5em auto;
 }
 
 /*========================
@@ -373,8 +388,7 @@ h2{
   margin: 8em auto 0 auto;
 }
 #about img{
-  max-width: 50%;
-  float: left;
+  max-width: 100%;
   margin: 2.5em 1.5em .5em auto;
 
   }
@@ -394,12 +408,12 @@ input,textarea{
 @media (min-width: 992px) and (max-width: 1199px){
   .two strong{
       display: inline-block;
-      padding-bottom: 1.1em;
+      padding-bottom: .2em;
     }
   }
   @media (min-width: 1200px) {
     .two strong{
       display: inline-block;
-      padding-bottom: 1.3em;
+      padding-bottom: .3em;
     }
   }
