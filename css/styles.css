@@ -258,7 +258,7 @@ strong{
 }
 .three strong{
   display: inline-block;
-  padding-bottom: 3em;
+  padding-bottom: 3.5em;
 }
 .skill-box{
   border: 4px solid #28344f;
@@ -368,8 +368,7 @@ input,textarea{
 }
 input[type="submit"]{
   width: 6em;
-}
-
+ }
 
 }
 
@@ -412,15 +411,9 @@ input,textarea{
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1200px) {
   .two strong{
-      display: inline-block;
-      padding-bottom: .2em;
-    }
+    display: inline-block;
+    padding-bottom: .2em;
   }
-  @media (min-width: 1200px) {
-    .two strong{
-      display: inline-block;
-      padding-bottom: .3em;
-    }
-  }
+}
