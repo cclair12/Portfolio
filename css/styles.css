@@ -256,7 +256,7 @@ figure img{
 strong{
   color: #f68632;
 }
-.three strong{
+.three strong,.five strong{
   display: inline-block;
   padding-bottom: 3.5em;
 }
@@ -414,6 +414,6 @@ input,textarea{
 @media (min-width: 992px) and (max-width: 1200px) {
   .two strong{
     display: inline-block;
-    padding-bottom: .2em;
+    padding-bottom: 0;
   }
 }
