@@ -27,6 +27,8 @@ Color Palette:
 body {
      font-family: 'Montserrat',Helvetica,sans-serif;
      font-weight: 400;
+     -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
      line-height: 1.8;
      color: #ededed;
    }
