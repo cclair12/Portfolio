@@ -321,6 +321,15 @@ footer{
   margin: 0 .8em 0 auto;
   text-decoration: none;
 }
+a.social-icons{
+  color: #28344f;
+}
+a.social-icons:hover{
+  color: #39d6ed;
+}
+a.social-icons:active{
+  color: #ff5576;
+}
 
 /*========================
 5. Form styles
